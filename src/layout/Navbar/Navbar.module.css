@@ -1,0 +1,84 @@
+.navbar_container {
+  background: linear-gradient(to right, #b45f6e, #c38688);
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+
+.brand {
+  color: #ffffff !important;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.brand:hover {
+  color: #ffe4ec !important;
+}
+
+.brand:hover {
+  color: #ffe4ec !important;
+}
+
+.navList {
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLink {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #f4e9ec;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #ffe4ec;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.btnWpp{
+
+  background-color: #25d366;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  outline: none;
+  border: none;
+
+}
+
+.btnWpp a{
+
+  color: #fff;
+  text-decoration: none;
+
+}
+
+@media ( max-width: 768px){
+
+  .brand{
+
+    font-size: 1rem;
+
+  }
+
+}

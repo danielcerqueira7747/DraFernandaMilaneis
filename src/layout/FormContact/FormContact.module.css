@@ -1,0 +1,107 @@
+.contact {
+    padding: 40px 20px;
+    background: url('../../assets/world_map.webp') no-repeat center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+}
+
+.addressContact {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contentContact{
+
+    flex: 1;
+    font-weight: 700;
+    color: #444;
+    padding: 20px;
+    /*background-color: #fff;*/
+    border-radius: 8px;
+    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);*/
+
+}
+
+.addressContact h4 {
+
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+
+}
+
+.form {
+
+    flex: 1;
+    padding: 20px;
+    /*background-color: #fff;*/
+    border-radius: 8px;
+    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);*/
+
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: #888;
+    outline: none;
+}
+
+.button {
+    background-color: #2C3E50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
