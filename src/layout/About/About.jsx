@@ -1,5 +1,5 @@
 import style from './About.module.css'
-import ImageDra from '../../assets/image-dra.png'
+import ImageDra from '../../assets/image-dra.jpg'
 
 import { FaWhatsapp } from 'react-icons/fa'
 
@@ -19,7 +19,7 @@ export default function About() {
             />
             <div className="mt-3">
               <h4 className="mb-1">Médica</h4>
-              <p className="mb-0">Clínica Médica · Geriatria · Medicina da Família</p>
+              <p className="mb-0">Endócrino e Geriatria · Medicina da Família</p>
             </div>
           </div>
 
@@ -28,7 +28,7 @@ export default function About() {
               <p>Prazer, eu sou a Dra. Fernanda Milaneis!</p>
               <p>
                 Formada há 10 anos pela PUC-PR, com residência em Medicina da Família
-                pela Baixada Santista e especialização em Geriatria pelo Hospital Albert Einstein - SP.
+                pela Baixada Santista e especialização em Endócrino e Geriatria pelo Hospital Albert Einstein - SP.
               </p>
               <p>Minha missão é oferecer cuidado humanizado para pessoas 40+.</p>
               <p>
@@ -38,7 +38,7 @@ export default function About() {
                 Se você busca mais qualidade de vida e bem-estar, estou aqui para ajudar!
               </p>
               <a
-                href="https://api.whatsapp.com/send?phone=5511933058210&amp;text=Olá! Eu gostaria de agendar um atendimento com Dra. Fernanda Milaneis "
+                href="https://api.whatsapp.com/send?phone=5513996423934&amp;text=Olá! Eu gostaria de agendar um atendimento com Dra. Fernanda Milaneis "
                 target="_blank"
                 rel="noreferrer"
                 className={style.ctaButton}

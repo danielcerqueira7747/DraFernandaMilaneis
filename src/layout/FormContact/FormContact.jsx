@@ -1,43 +1,32 @@
 import style from './FormContact.module.css'
-
-import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
-
 import { BsFillTelephoneFill } from "react-icons/bs";
 
-export default function FormContact(){
+export default function FormContact() {
 
-    const form = useRef()
+    const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault()
+    const sendToWhatsapp = (e) => {
+        e.preventDefault();
 
-        emailjs.sendForm(
-            import.meta.env.VITE_SERVICE_KEY,
-            import.meta.env.VITE_TEMPLATE_ID,
-            form.current,
-            import.meta.env.VITE_PUBLIC_KEY
-        )
-        .then((result) => {
+        const name = form.current.name.value;
+        const message = form.current.message.value;
 
-            form.current.reset();
+        const fullMessage = `Olá, me chamo \n\n` +
+            `*Nome:* ${name}\n` +
+            `*Mensagem:* ${message}`;
 
-            if (window.fbq) {
+        const encodedMessage = encodeURIComponent(fullMessage);
+        const phone = "5513996423934";
 
-                window.fbq('track', 'Lead');
-                            
-            }
+        const whatsappURL = `https://wa.me/${phone}?text=${encodedMessage}`;
 
-            alert("Mensagem enviada com sucesso!")
+        window.open(whatsappURL, '_blank');
 
-        }, (error) => {
-
-            alert("Erro ao enviar mensagem: " + error.text)
-
-        })
+        form.current.reset();
     }
 
-    return(
+    return (
 
         <section className={style.contact} id='contact'>
 
@@ -48,58 +37,29 @@ export default function FormContact(){
                 <div className={style.addressContact}>
 
                     <div className={style.contentContact}>
-
                         <h4>Dra. Fernanda Milaneis</h4>
-
                         <span>Unidade Santos (STS)</span>
                         <p>Avenida Ana Costa, 228 20º Andar</p>
                         <p>Gonzaga</p>
                         <p>Santos/SP</p>
                         <p>11060-002</p>
-
                         <p><BsFillTelephoneFill /> (13) 2191-4791</p>
-
                     </div>
 
                 </div>
 
                 <div className={style.form}>
                     
-                    <form ref={form} onSubmit={sendEmail} className={style.form}>
+                    <form id='formContact' ref={form} onSubmit={sendToWhatsapp} className={style.form}>
 
                         <div className={style.formGroup}>
-
                             <label htmlFor="name">Nome</label>
                             <input type="text" id="name" name="name" placeholder="Seu nome" required />
-
                         </div>
                     
                         <div className={style.formGroup}>
-
-                            <label htmlFor="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
-
-                        </div>
-
-                        <div className={style.formGroup}>
-
-                            <label htmlFor="telephone">Telefone</label>
-                            <input type="telephone" id="telephone" name="telephone" placeholder="(11) 9000-0000" required />
-
-                        </div>
-
-                        <div className={style.formGroup}>
-
-                            <label htmlFor="subject">Assunto</label>
-                            <input type="text" id="subject" name="subject" required />
-
-                        </div>
-                    
-                        <div className={style.formGroup}>
-
                             <label htmlFor="message">Mensagem</label>
                             <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
-
                         </div>
                     
                         <button type="submit" className={style.button}>Enviar Mensagem</button>
@@ -113,5 +73,4 @@ export default function FormContact(){
         </section>
 
     )
-
 }

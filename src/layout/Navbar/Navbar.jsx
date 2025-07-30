@@ -27,7 +27,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item">
               <button className={style.btnWpp}>
-                <a href="https://api.whatsapp.com/send?phone=5511933058210&amp;text=Olá! Eu gostaria de agendar um atendimento com Dra. Fernanda Milaneis " 
+                <a href="https://api.whatsapp.com/send?phone=5513996423934&amp;text=Olá! Eu gostaria de agendar um atendimento com Dra. Fernanda Milaneis " 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    aria-label="WhatsApp"

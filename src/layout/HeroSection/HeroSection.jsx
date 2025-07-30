@@ -1,5 +1,5 @@
 import style from './HeroSection.module.css'
-import imageDra from '../../assets/image-dra.png'
+import imageDra from '../../assets/image-dra.jpg'
 import { FaWhatsapp } from 'react-icons/fa'
 
 export default function HeroSection() {
@@ -16,7 +16,7 @@ export default function HeroSection() {
                 Meu trabalho vai além do tratamento: foco na promoção da saúde , prevenção de doenças e cuidado integral, considerando os aspectos físicos , emocionais e sociais de cada paciente.
               </p>
               <a
-                href="https://api.whatsapp.com/send?phone=5511933058210&amp;text=Olá! Eu gostaria de agendar um atendimento com Dra. Fernanda Milaneis "
+                href="https://api.whatsapp.com/send?phone=5513996423934&amp;text=Olá! Eu gostaria de agendar um atendimento com Dra. Fernanda Milaneis "
                 target="_blank"
                 rel="noreferrer"
                 className={style.ctaButton}

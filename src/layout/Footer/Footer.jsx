@@ -18,7 +18,7 @@ export default function Footer() {
           <a href="https://www.instagram.com/dra.fernandamilaneis/" target="_blank" rel="noreferrer" className={style.icon}>
             <FaInstagram />
           </a>
-          <a href="https://api.whatsapp.com/send?phone=5511933058210&amp;text=Olá! Eu gostaria de agendar um atendimento com Dra. Fernanda Milaneis " target="_blank" rel="noreferrer" className={style.icon}>
+          <a href="https://api.whatsapp.com/send?phone=5513996423934&amp;text=Olá! Eu gostaria de agendar um atendimento com Dra. Fernanda Milaneis " target="_blank" rel="noreferrer" className={style.icon}>
             <FaWhatsapp />
           </a>
         </div>
