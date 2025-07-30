@@ -13,8 +13,8 @@ export default function FormContact() {
         const message = form.current.message.value;
 
         const fullMessage = `Olá, me chamo \n\n` +
-            `*Nome:* ${name}\n` +
-            `*Mensagem:* ${message}`;
+            `${name}\n` +
+            `${message}`;
 
         const encodedMessage = encodeURIComponent(fullMessage);
         const phone = "5513996423934";
