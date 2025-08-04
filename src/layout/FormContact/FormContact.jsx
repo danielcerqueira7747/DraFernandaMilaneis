@@ -38,11 +38,9 @@ export default function FormContact() {
 
                     <div className={style.contentContact}>
                         <h4>Dra. Fernanda Milaneis</h4>
-                        <span>Unidade Santos (STS)</span>
-                        <p>Avenida Ana Costa, 228 20º Andar</p>
-                        <p>Gonzaga</p>
+                        <p>Av. Conselheiro Nébias,  444  cj 1809</p>
                         <p>Santos/SP</p>
-                        <p>11060-002</p>
+                        <p>11045-000</p>
                         <p><BsFillTelephoneFill />  (13) 99642-3934</p>
                     </div>
 
