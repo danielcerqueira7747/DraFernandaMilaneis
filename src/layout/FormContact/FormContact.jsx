@@ -43,7 +43,7 @@ export default function FormContact() {
                         <p>Gonzaga</p>
                         <p>Santos/SP</p>
                         <p>11060-002</p>
-                        <p><BsFillTelephoneFill /> (13) 2191-4791</p>
+                        <p><BsFillTelephoneFill />  (13) 99642-3934</p>
                     </div>
 
                 </div>
